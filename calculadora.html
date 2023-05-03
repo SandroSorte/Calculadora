@@ -14,31 +14,35 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="container">
-        <div class="row mx-auto">
-            <div class="col-md-4 offset-md-4">
-                <div class="card shadow">
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card shadow-lg p-2">
                     <div class="card-body">
                         <h5 class="card-title text-center mb-3">Calculadora Javascript</h5>
-                        <p class=" border border-2 p-3">[display]</p>
-                        <div class="row p-2 g-1">
-                            <button type="button" class="btn btn-secondary w-25">7</button>
-                            <button type="button" class="btn btn-secondary w-25">9</button>
-                            <button type="button" class="btn btn-secondary w-25">8</button>
-                            <button type="button" class="btn btn-primary w-25">+</button>
-                            <button type="button" class="btn btn-secondary w-25" >4</button>
-                            <button type="button" class="btn btn-secondary w-25">5</button>
-                            <button type="button" class="btn btn-secondary w-25">6</button>
-                            <button type="button" class="btn btn-primary w-25">-</button>
-                            <button type="button" class="btn btn-secondary w-25">1</button>
-                            <button type="button" class="btn btn-secondary w-25">2</button>
-                            <button type="button" class="btn btn-secondary w-25">3</button>
-                            <button type="button" class="btn btn-primary w-25">X</button>
-                            <button type="button" class="btn btn-secondary w-25">0</button>
-                            <button type="button" class="btn btn-dark w-25">,</button>
-                            <button type="button" class="btn btn-dark w-25">=</button>
-                            <button type="button" class="btn btn-primary w-25">/</button>
+                        <h4 id="display" class="border border-2 p-3 text-end bg-warning">0</h4>
+                        <div class="row g-1">
+                            <button type="button" id="clear" class="btn btn-danger w-25 num">C</button>
+                            <button type="button" class="btn btn-secondary w-25 num">(</button>
+                            <button type="button" class="btn btn-secondary w-25 num">)</button>
+                            <button type="button" class="btn btn-secondary w-25 num">%</button>
+                            <button type="button" class="btn btn-secondary w-25 num">7</button>
+                            <button type="button" class="btn btn-secondary w-25 num">9</button>
+                            <button type="button" class="btn btn-secondary w-25 num">8</button>
+                            <button type="button" class="btn btn-primary w-25 op">+</button>
+                            <button type="button" class="btn btn-secondary w-25 num" >4</button>
+                            <button type="button" class="btn btn-secondary w-25 num">5</button>
+                            <button type="button" class="btn btn-secondary w-25 num">6</button>
+                            <button type="button" class="btn btn-primary w-25 op">-</button>
+                            <button type="button" class="btn btn-secondary w-25 num">1</button>
+                            <button type="button" class="btn btn-secondary w-25 num">2</button>
+                            <button type="button" class="btn btn-secondary w-25 num">3</button>
+                            <button type="button" class="btn btn-primary w-25 op">X</button>
+                            <button type="button" class="btn btn-secondary w-25 num">0</button>
+                            <button type="button" class="btn btn-secondary w-25 num">,</button>
+                            <button type="button" class="btn btn-secondary w-25 res">=</button>
+                            <button type="button" class="btn btn-primary w-25 op">/</button>
                         </div>
                     </div>
                 </div>
