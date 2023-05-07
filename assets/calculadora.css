@@ -11,11 +11,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3em;
+    padding: .2em;
 }
 
 #calculadora {
-    width: 400px;
+    width: 25em;
+    margin-top: 2em;
     padding: 1em;
     border-radius: 1em;
     background-color: rgb(72, 69, 69);
@@ -30,21 +31,17 @@ h3 {
     color: white;
 }
 
-#operations {
+#display {
     text-align: right;
+    background-color: white;
+    margin-top: .3em;
+    margin-bottom: .2em;
     border: 1px solid black;
     border-radius: 3px;
-    background-color: white;
-    margin-top: 1em;
-    margin-bottom: .5em;
-}
-
-#display {
-    font-weight: 700;
     font-size: 3em;
-    padding: .2em;
+    padding: .3em;
     overflow-wrap: break-word;
-    min-height: 1.6em;
+    min-height: 1.8em;
 }
 
 #buttons-container {
@@ -57,7 +54,7 @@ h3 {
     border: 1px solid transparent;
     border-radius: 0;
     height: 4em;
-    font-size: 1.2em;
+    font-size: 1.3em;
     background-color: #dbdbdb;
     cursor: pointer;
 }

@@ -1,7 +1,6 @@
-const tecla = [...document.querySelectorAll('.number')]
-const op = [...document.querySelectorAll('.op')]
+const tecla = document.querySelectorAll('.number')
+const op = document.querySelectorAll('.op')
 const res = document.querySelector('#resultado')
-const limpar = document.querySelector('#clear')
 const display = document.querySelector('#display')
 
 let sinal = false
@@ -29,6 +28,7 @@ tecla.forEach((el) => {
 //Teclas de operação
 op.forEach((el) => {
     el.addEventListener('click', (evt) => {
+        decimal = false
         if (!sinal) {
             sinal = true
             display.textContent += evt.target.textContent
@@ -39,7 +39,7 @@ op.forEach((el) => {
 //Tecla de resultado da operação
 res.addEventListener('click', (evt) => {
     sinal = false
-    decimal = false
+    decimal = true
     const res = eval(display.innerHTML)
     display.innerHTML = res
 })
