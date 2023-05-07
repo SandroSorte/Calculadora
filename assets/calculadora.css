@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* faz com que todos os elementos não passaem do elemento pai*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(180, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calculadora {
+    width: 400px;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: rgb(72, 69, 69);
+    color: rgb(80, 79, 79);
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: white;
+}
+
+#operations {
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+#display {
+    font-weight: 700;
+    font-size: 3em;
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+#buttons-container .number {
+    background-color: #f3f3f3;
+}
+
+#buttons-container button:hover {
+    background-color: rgb(88, 94, 88);
+    color: white
+}
+
+#buttons-container #resultado {
+    grid-column: span 2;
+    background-color: rgb(140, 177, 130);
+}
+
+#buttons-container #resultado:hover {
+    grid-column: span 2;
+    background-color: rgb(84, 141, 77);
+}
+
+#buttons-container #limpar {
+    grid-column: span 2;
+    background-color: rgb(221, 89, 89);
+}
+
+#buttons-container #limpar:hover {
+    grid-column: span 2;
+    background-color: rgb(231, 14, 14);
+}
